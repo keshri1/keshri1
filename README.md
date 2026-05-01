@@ -431,6 +431,3 @@ const sunny: Developer = {
      GITHUB ACTIONS — Snake contribution graph generator
      Add this as .github/workflows/snake.yml in THIS repo
 ════════════════════════════════════════════════════════════ -->
-
-<details>
-</details>
