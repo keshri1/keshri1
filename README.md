@@ -3,9 +3,6 @@
 <!--   Repo name: keshri  (must match your GitHub username)     -->
 <!-- ██████████████████████████████████████████████████████████ -->
 
-<!-- ═══════════════════════════════════════════════════════════
-     HEADER — capsule-render wave (kyechan99/capsule-render)
-════════════════════════════════════════════════════════════ -->
 <p align="center">
   <img
     src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Sunny%20Keshri&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Senior%20Software%20Engineer%20%7C%20Full%20Stack%20%7C%20Data%20Platforms&descAlignY=58&descSize=18"
@@ -14,10 +11,6 @@
   />
 </p>
 
-<!-- ═══════════════════════════════════════════════════════════
-     TYPING SVG — animated role subtitle
-     (DenverCoder9/readme-typing-svg)
-════════════════════════════════════════════════════════════ -->
 <p align="center">
   <a href="https://github.com/keshri1">
     <img
@@ -92,10 +85,6 @@ const sunny: Developer = {
 ```
 
 ---
-
-<!-- ═══════════════════════════════════════════════════════════
-     TROPHY SHELF (ryo-ma/github-profile-trophy)
-════════════════════════════════════════════════════════════ -->
 
 ## 🏆 &nbsp;GitHub Trophies
 
@@ -175,9 +164,6 @@ const sunny: Developer = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     TECH STACK — skill icons (tandpfun/skill-icons)
-════════════════════════════════════════════════════════════ -->
 
 ## 🛠️ &nbsp;Tech Stack
 
@@ -250,10 +236,6 @@ const sunny: Developer = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     GITHUB STATS — anuraghazra/github-readme-stats
-════════════════════════════════════════════════════════════ -->
-
 ## 📈 &nbsp;GitHub Stats
 
 <p align="center">
@@ -281,11 +263,6 @@ const sunny: Developer = {
 
 ---
 
-<!-- ═══════════════════════════════════════════════════════════
-     CONTRIBUTION SNAKE (Platane/snk)
-     Requires GitHub Actions workflow below to generate SVG
-════════════════════════════════════════════════════════════ -->
-
 ## 🐍 &nbsp;Contribution Graph
 
 <p align="center">
@@ -296,13 +273,7 @@ const sunny: Developer = {
   </picture>
 </p>
 
-> **Setup:** See the [GitHub Actions workflow](#-github-actions-snake-workflow) at the bottom to auto-generate this.
-
 ---
-
-<!-- ═══════════════════════════════════════════════════════════
-     ACTIVITY GRAPH (ashutosh00710/github-readme-activity-graph)
-════════════════════════════════════════════════════════════ -->
 
 ## 📅 &nbsp;Activity Graph
 
@@ -462,43 +433,4 @@ const sunny: Developer = {
 ════════════════════════════════════════════════════════════ -->
 
 <details>
-<summary>⚙️ <strong>GitHub Actions — Snake Workflow Setup</strong> (click to expand)</summary>
-
-Create `.github/workflows/snake.yml` in this repo with:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"   # runs daily at midnight UTC
-  workflow_dispatch:        # allows manual trigger
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate snake SVG
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: keshri1
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-After adding this file and pushing, go to **Actions → Generate Snake → Run workflow** to generate the SVGs immediately.
-
 </details>
